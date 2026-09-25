@@ -1,0 +1,17 @@
+<!-- @dsCard group="Actions" height=96 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Button — preview</title>
+<style>body{margin:0;background:var(--surface);color:var(--ink);font-family:var(--font-sans)} #root{padding:24px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var B = window.Bravo, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(B.Button, { variant: 'primary', icon: 'bag' }, 'Add to bag'),
+    h(B.Button, { variant: 'outline' }, 'View lookbook'),
+    h(B.Button, { variant: 'link' }, 'See all'),
+    h(B.Button, { variant: 'primary', disabled: true }, 'Sold out')));
+</script>
+</body>
+</html>

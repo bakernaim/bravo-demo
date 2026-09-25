@@ -1,0 +1,8 @@
+{"v":3,"layout":"files","createdOnFiles":{"v":1,"at":"2026-09-25T10:14:41Z"},"title":"Bravo Shoes","namespace":"Bravo",
+"libraries":[{"name":"react","version":"18"},{"name":"react-dom","version":"18"}],
+"sections":{},"groups":["Logos"],
+"assetGroups":{"Logos":{"name":"Logos","tile":"l","order":["bravo-logo.png","bravo-mark.png"],"files":{
+ "bravo-logo.png":{"name":"bravo-logo.png","blob":"3a6212663db76e66dc869e6abea51715","size":32942,"type":"image/png"},
+ "bravo-mark.png":{"name":"bravo-mark.png","blob":"37e91e8ae70df3f3e2a8d7eb0234697b","size":28333,"type":"image/png"}}}},
+"blobs":{},"docs":{"readme":"project/README.md","sections":[]},
+"lastChange":{"by":"Claude","at":"2026-09-25T10:14:41Z","via":"Claude Code","note":"First Bravo Shoes system: tokens from the logo, 10 components, storefront + product page POC"}}

@@ -1,0 +1,15 @@
+<!-- @dsCard group="Commerce" height=240 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>ProductImage — preview</title>
+<style>body{margin:0;background:var(--surface);color:var(--ink);font-family:var(--font-sans)} #root{padding:24px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var B = window.Bravo, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(B.ProductImage, { shape: 'heel' }), h(B.ProductImage, { shape: 'flat', tone: 'raised' }),
+    h(B.ProductImage, { shape: 'boot', tone: 'espresso' }), h(B.ProductImage, { shape: 'sneaker' })));
+</script>
+</body>
+</html>

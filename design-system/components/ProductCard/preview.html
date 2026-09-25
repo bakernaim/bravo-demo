@@ -1,0 +1,16 @@
+<!-- @dsCard group="Commerce" height=460 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>ProductCard — preview</title>
+<style>body{margin:0;background:var(--surface);color:var(--ink);font-family:var(--font-sans)} #root{padding:24px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var B = window.Bravo, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(B.ProductCard, { name: 'Stiletto Pump', category: 'Heels', price: 189, isNew: true, shape: 'heel', colors: ['#1f1b16', '#c9a27e', '#a3352b'] }),
+    h(B.ProductCard, { name: 'Ballet Flat Lune', category: 'Flats', price: 129, salePrice: 95, shape: 'flat', tone: 'raised', favorite: true }),
+    h(B.ProductCard, { name: 'Ankle Boot Noor', category: 'Boots', price: 245, shape: 'boot', tone: 'espresso', colors: ['#1f1b16', '#6b4a33'] })));
+</script>
+</body>
+</html>

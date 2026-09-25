@@ -1,0 +1,1 @@
+The Bravo Shoes logo, cut from the original artwork onto a transparent ground; single ink is the logo gold #A8945A (`gold`). Use `bravo-mark` in the header and hero, `bravo-logo` (with the BRAVO SHOES pill) in the footer. The source file is 456px, so keep the mark under ~260px wide until a vector or high-res file is supplied.
