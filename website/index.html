@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bravo Shoes</title>
+<meta name="description" content="Bravo Shoes — heels, flats, boots, sneakers and sandals.">
+<link rel="icon" href="assets/bravo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..600&family=Jost:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div class="promo label" id="promo"></div>
+<header class="header">
+  <div class="wrap header-inner">
+    <div style="display:flex;align-items:center">
+      <button class="iconbtn menu-btn" id="menu-open" aria-label="Open menu"><svg class="icon" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+      <nav class="nav label" id="nav" aria-label="Main"></nav>
+    </div>
+    <a class="logo" href="#home" aria-label="Bravo Shoes home"><img src="assets/bravo-mark.png" alt="Bravo Shoes"></a>
+    <div class="actions">
+      <button class="iconbtn" id="search-open" aria-label="Search"><svg class="icon" viewBox="0 0 24 24"><path d="M10.5 18a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15z"/><path d="M16 16l5 5"/></svg></button>
+      <a class="iconbtn" href="#wishlist" aria-label="Wishlist"><svg class="icon" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span class="count" id="fav-count" data-n="0">0</span></a>
+      <button class="iconbtn" id="bag-open" aria-label="Bag"><svg class="icon" viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="count" id="bag-count" data-n="0">0</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1"></main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/bravo-logo.png" alt="Bravo Shoes" style="height:104px;width:auto">
+        <p style="margin-top:16px;max-width:30ch;font-size:14px;opacity:.8">Shoes for every step — heels, flats, boots and sandals chosen for comfort and shine.</p>
+      </div>
+      <div><div class="label">Shop</div><div id="footer-shop"></div></div>
+      <div><div class="label">Help</div>
+        <a href="#size-guide">Size guide</a><a href="#delivery">Delivery &amp; exchanges</a><a href="#contact">Contact us</a><a href="#about">About Bravo</a>
+      </div>
+      <div>
+        <div class="label">Join the list</div>
+        <p style="font-size:14px;opacity:.8;margin-top:8px">New arrivals and private sales, first.</p>
+        <form class="news" id="news-form">
+          <label for="news-email" class="sr-only">Email address</label>
+          <input id="news-email" type="email" placeholder="Email address" required>
+          <button class="btn btn-ondark btn-sm" type="submit">Join</button>
+        </form>
+        <a class="label" id="footer-insta" style="margin-top:20px;color:var(--gold)" target="_blank" rel="noopener"></a>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Bravo Shoes</span><span>Prices include VAT</span></div>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+
+<aside class="drawer drawer-left" id="menu" aria-label="Menu" aria-hidden="true">
+  <div class="drawer-head"><span class="label">Menu</span><button class="iconbtn" data-close aria-label="Close menu"><svg class="icon" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="drawer-body"><nav class="mobile-nav" id="mobile-nav" aria-label="Mobile"></nav></div>
+</aside>
+
+<aside class="drawer drawer-right" id="bag" aria-label="Bag" aria-hidden="true">
+  <div class="drawer-head"><span class="label" id="bag-title">Your bag</span><button class="iconbtn" data-close aria-label="Close bag"><svg class="icon" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="drawer-body" id="bag-body"></div>
+  <div class="drawer-foot" id="bag-foot"></div>
+</aside>
+
+<div class="search" id="search" aria-hidden="true">
+  <div class="wrap">
+    <div class="search-row">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M10.5 18a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15z"/><path d="M16 16l5 5"/></svg>
+      <label for="search-input" class="sr-only">Search shoes</label>
+      <input id="search-input" type="search" placeholder="Search heels, boots, sandals…" autocomplete="off">
+      <button class="iconbtn" data-close aria-label="Close search"><svg class="icon" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="search-results" id="search-results"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="store.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
